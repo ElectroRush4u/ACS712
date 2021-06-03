@@ -1,0 +1,35 @@
+####################################### 
+
+# Class and Object (KEYWORD1)
+
+#######################################
+
+ACS712XX 	KEYWORD1
+ACS712 		KEYWORD1
+
+
+#######################################
+
+# Methods and Functions (KEYWORD2)
+
+#######################################	
+
+autoCalibrate	KEYWORD2
+getAC		KEYWORD2
+getDC		KEYWORD2
+getOffset	KEYWORD2
+getSensitivity	KEYWORD2
+setOffset	KEYWORD2
+setSensitivity	KEYWORD2
+reset		KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ACS712_05B	LITERAL1
+ACS712_20A	LITERAL1
+ACS712_30A	LITERAL1
+
+
