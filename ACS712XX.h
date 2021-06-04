@@ -29,9 +29,9 @@ class ACS712XX{
     float autoCalibrate();
     float getAC(float _freq = 50.0,float _n_total_period = 1.0);
     float getDC(int _count = 10);
-    float getOffset()                 { return offset;              }
-    float getSensitivity()            { return 1.0/inv_sensitivity; }
-    void setOffset(float _offset)     { offset = _offset;           }
+    float getOffset()                 { return offset;                  }
+    float getSensitivity()            { return 1000.0/inv_sensitivity;  }
+    void setOffset(float _offset)     { offset = _offset;               }
     void setSensitivity(float _sen);
     void reset();
 
