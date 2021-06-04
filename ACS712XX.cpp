@@ -82,7 +82,7 @@ float ACS712XX :: getDC(int _count) {  // required time, around 1 ms of default 
 }
 
 void ACS712XX :: setSensitivity(float _sen) {
-  results_adjuster /= inv_sensitivity;                  // A/ADC x A/V -> V/ADC
+  results_adjuster /= inv_sensitivity;                  // A/ADC / A/V -> V/ADC
   inv_sensitivity = 1000.0 / _sen;                      // V/A -> A/V
   results_adjuster *= inv_sensitivity;                  // V/ADC x A/V -> A/ADC
 }
