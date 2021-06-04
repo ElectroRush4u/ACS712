@@ -37,12 +37,12 @@ void setup() {
   Serial.println();
   
   Serial.print(F("Present Sensitivity:"));
-  Serial.print(ACS712.getSensitivity(),3);  // Show you the present sensitivity
-  Serial.println(F(" V/A"));
+  Serial.print(ACS712.getSensitivity());  // Show you the present sensitivity
+  Serial.println(F(" mV/A"));
   Serial.println();
   
 //  Only change this value when you are very sure that the sensor's sensitivity is changed.
-//  ACS712.setSensitivity(200);
+//  ACS712.setSensitivity(200);             // mV/A
 
 // This reset() function will reset sensor offset and sensitivity to default.
   ACS712.reset();
