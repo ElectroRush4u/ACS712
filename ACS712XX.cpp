@@ -76,7 +76,6 @@ float ACS712XX :: getDC(int _count) {  // required time, around 1 ms of default 
   }
   
   float _adc_avg = (float(_adc) / float(_count)) - offset;  // average of 10 samples and remove offset
-  Serial.println(_adc_avg);
   float _current = _adc_avg * results_adjuster;   // ADC x A/ADC -> A
   return _current;
 }
